@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Shop</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/7b5f8f09d0.js" crossorigin="anonymous"></script>
+    <title>Natural Platter</title>
+     <!-- daisy tailwind cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
     <!-- font added  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <!-- font added -->
 <style>
 .font-sora{
@@ -17,7 +19,106 @@
 }
 </style>
 </head>
-<body class="font-sora  ">
+<body class="font-sora bg-white ">
+<header class="bg-gradient-to-b from-white to-[#EFEBE3]">
+<!-- navbar for mobile  -->
+ <nav class="flex justify-between pl-3 pr-3 pb-6 pt-6 mb-8 border-b-2 border-b-[#179800] md:hidden lg:hidden">
+    <div>
+        <img src="./assets/logo-header.png" alt="">
+      </div>
+      <div class="flex justify-between ">
+        <div class="dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn text-[#179800] btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content text-white bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-xl">
+            <li><a>Product</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+ </nav>
+
+   <!-- Navbar for pc version -->
+   <nav class="hidden md:grid">
+    <div class="navbar border-b-2 md:border-none md:mb-6 md:mt-6  md:pr-16 md:pl-16 ">
+        <div class="flex flex-row-reverse justity-between navbar-start md:grid">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost md:hidden lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-xl">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost md:text-2xl font-regular"><img src="./assets/logo-header.png" alt="logo"></a>
+        </div>
+        <div class="navbar-center hidden md:flex">
+          <ul class="menu menu-horizontal px-1 text-black text-sm">
+            <li><a>Product</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+         <div class="hidden md:flex space-x-4 mr-4 pt-2 text-black"> 
+          <a><i class="fa-solid fa-magnifying-glass w-6 h-6"></i> </a> 
+          <a><i class="fa-solid fa-cart-shopping w-6 h-6"></i></a>   
+        </div>
+         <div class="hidden md:flex space-x-3">
+          <a class="btn bg-white text-black md:text-lg hover:bg-[#179800] hover:border-none hover:text-white  border-[#179800] rounded-lg px-8 py-2">Login</a>
+          <a class="btn bg-[#179800] text-white border-none md:text-xl rounded-lg px-8 py-2">Register</a>
+         </div>
+        </div>
+      </div>
+ </nav>
+ <!-- banner section added  -->
+<section class="md:mx-auto md:w-11/12 px-4">
+  <div class="space-y-4 md:pt-16 lg:pt-16">
+    <h1 class="text-black text-center text-4xl font-semibold md:text-4xl lg:text-5xl">
+      Freshness <span class="text-[#179800]">You Can <br>Count </span> On, Prices You’ll Love!
+    </h1>
+    <p class="text-center text-[#111111] text-lg md:text-xl  md:pt-3 lg:pt-4">
+      Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!
+    </p>
+  </div>
+  <div class="flex justify-center mt-6">
+    <img 
+      class="w-full max-w-5xl h-auto animate-bounce"
+      src="./assets/hero-vegetables.png" 
+      alt="">
+  </div>  
+</section>
+</header>
 
 </body>
 </html>
